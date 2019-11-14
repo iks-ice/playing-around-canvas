@@ -39,9 +39,7 @@ class Ball {
         ctx.beginPath();
         balls.forEach(ball => {
             if (this !== ball) {
-                if (getDistance(this, ball) < 100) {
-                    ctx.lineTo(ball.x, ball.y);
-                }
+                ctx.lineTo(ball.x, ball.y);
             }
         });
         ctx.closePath();
@@ -51,7 +49,7 @@ class Ball {
 let balls = [];
 const init = () => {
     balls = [];
-    for (let index = 0; index < 30; index++) {
+    for (let index = 0; index < 3; index++) {
         const radius = randomIntFromRange(1, 30);
         const x = randomIntFromRange(radius, canvas.width - radius);
         const y = randomIntFromRange(radius, canvas.height - radius);
