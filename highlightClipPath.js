@@ -51,10 +51,6 @@ document.addEventListener('mousemove', ({x, y}) => {
 })
 
 
-
-
-
-
 function randomIntFromRange (min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }

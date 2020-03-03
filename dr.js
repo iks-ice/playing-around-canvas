@@ -40,7 +40,7 @@ let balls = [];
 const init = () => {
     balls = [];
     for (let index = 0; index < 100; index++) {
-        const radius = randomIntFromRange(50, 100);
+        const radius = randomIntFromRange(30, 70);
         const x = randomIntFromRange(radius, canvas.width - radius);
         const y = randomIntFromRange(radius, canvas.height - radius);
         balls.push(new Ball(x, y, radius));
